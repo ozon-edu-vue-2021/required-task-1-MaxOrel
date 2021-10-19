@@ -9,7 +9,7 @@ body {
 img {
     width: 100%;
     max-width: 100%;
-    display: bloсk;
+    display: block;
 }
 
 a {
@@ -47,18 +47,20 @@ main {
     box-sizing: border-box;
     border-radius: 6px;
     margin: 50px auto;
+    align-items: center;
 }
 
 /* Action style */
-.action {
+.fetch {
     background-color: #66BB6A;
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 6px;
     margin: 10px 0;
+    display: inline-block;
 }
 
-.action:hover {
+.fetch:hover {
     background-color: #4CAF50;
 }
 
@@ -78,18 +80,6 @@ a {
     overflow: hidden;
     width: 100%;
     min-height: 100px;
-}
-
-a:nth-child(n) {
-    background-color: #EFEBE9;
-}
-
-a:nth-child(2n) {
-    background-color: #D7CCC8;
-}
-
-a:nth-child(3n) {
-    background-color: #BCAAA4;
 }
 
 /* Popup style */
@@ -126,7 +116,7 @@ figcaption {
     bottom: 0;
     right: 0;
     background-color: rgba(33, 33, 33, 0.5);
-    z-index: -1;
+    z-index: 10;
 }
 
 .popup.open {
@@ -139,7 +129,7 @@ figcaption {
     right: 50px;
     background-color: transparent;
     line-height: 0;
-    font-size: 50px;
+    font-size: 30px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
